@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graphic Designer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Nirmal Giri</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="intro">
+        <h2>Hello, I'm <span class="highlight">Nirmal</span></h2>
+        <p>A passionate <strong>Graphic Designer</strong></p>
+      </div>
+      <div class="profile-photo">
+        <img src="nirmal2.jpg " alt="Your Photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h2>My Service</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Graphic Design</h3>
+          <p>Logos, branding, posters, flyers, social media posts and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="air force.png" alt="Project 1" />
+          <div class="buttons">
+            <button onclick="viewImage('air force.png')">View</button>
+            <a href="air force.png" download><button>Download</button></a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="food doodle.png" alt="Project 2" />
+          <div class="buttons">
+            <button onclick="viewImage('food doodle.png')">View</button>
+            <a href="food doodle.png" download><button>Download</button></a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="puma.png" alt="Project 3" />
+          <div class="buttons">
+            <button onclick="viewImage('puma.png')">View</button>
+            <a href="puma.png" download><button>Download</button></a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="pamplete.png" alt="Project 4" />
+          <div class="buttons">
+            <button onclick="viewImage('pamplete.png')">View</button>
+            <a href="pamplete.png" download><button>Download</button></a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="Untitled-1.png" alt="Project 5" />
+          <div class="buttons">
+            <button onclick="viewImage('Untitled-1.png')">View</button>
+            <a href="Untitled-1.png" download><button>Download</button></a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="open admission.png" alt="Project 6" />
+          <div class="buttons">
+            <button onclick="viewImage('open admission.png')">View</button>
+            <a href="open admission.png" download><button>Download</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Viewer -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
